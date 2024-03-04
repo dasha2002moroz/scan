@@ -1,0 +1,257 @@
+
+.tariff {
+    width: 415px;
+    height: 640px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    box-sizing: border-box;
+}
+
+.tariff + .tariff {
+    margin-left: 5%;
+    margin-bottom: 5%;
+   
+}
+
+.head {
+    height: 130px;
+    position: relative;
+    font-size: 20px;
+    padding: 28px;
+    letter-spacing: 0.2px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-family: var(--inter-light-Beta);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.subTitle {
+    font-family: var('inter-light-Beta');
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.icon {
+    position: absolute;
+    right: 13px;
+    bottom: 35px;
+
+}
+
+.body {
+    position: relative;
+    padding-left: 29px;
+}
+
+.current {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    color: var(--white-bg-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    background-color: var(--blue-bg-color);
+    padding: 3px 13px;
+}
+
+.price {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 33px;
+}
+
+.oldPrice {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: line-through;
+    padding-left: 21px;
+    opacity: 0.5;
+}
+
+.priceText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.content {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 60px;
+}
+
+.contentList {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.contentItem {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    padding-top: 3px;
+}
+
+.contentItem::before {
+    content: " ";
+    background: url("@assets/images/check.png"), no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 7px;
+}
+
+.button {
+    padding-top: 55px;
+    margin-top: 20px;
+}
+
+.buttonAccount {
+    border: none;
+    border-radius: 5px;
+    background: var(--grey-bg-color);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    width: 355px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonMore {
+    border-radius: 5px;
+    background: var(--blue-bg-color);
+    color: var(--white-bg-color);
+    border: none;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    width: 355px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .tariff {
+        width: auto;
+        height: 960px;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .tariff + .tariff {
+        
+        margin-top: 50px;
+    }
+
+    .head {
+        height: 200px;
+        padding-left: 22px;
+    }
+
+    .title {
+        font-size: 60px;
+        letter-spacing: 0.2px;
+    }
+
+    .subTitle {
+        padding-top: 5px;
+        font-size: 40px;
+        width: 685px;
+    }
+
+    .icon {
+        width: 42px;
+        bottom: 64px;
+    }
+
+    .body {
+        padding-left: 22px;
+    }
+
+    .current {
+    }
+
+    .price {
+        font-size: 40px;
+        letter-spacing: 0.3px;
+        padding-top: 22px;
+    }
+
+    .oldPrice {
+    }
+
+    .priceText {
+    }
+
+    .content {
+        padding-top: 37px;
+        font-size: 58px;
+        letter-spacing: 0.18px;
+    }
+
+    .contentList {
+    }
+
+    .contentItem {
+        font-size: 46px;
+        letter-spacing: 0.16px;
+    }
+
+    .contentItem::before {
+    }
+
+    .button {
+        padding-top: 38px;
+    }
+
+    .buttonAccount {
+        font-family: 'inter-regular';
+        color: var(--black-bg-color);
+        border-radius: 15px;
+        width: 97%;
+        height: 100px;
+        font-size: 38px;
+        border: 5;
+        background-color: var(--grey-bg-color);
+    }
+
+    .buttonMore {
+        font-family: 'inter-regular';
+        color: var(--white-bg-color);
+        padding: 25px 260px;
+        border-radius: 15px;
+        width: 97%;
+        height: 50%;
+        font-size: 38px;
+        border: 5;
+        background-color: var(--blue-bg-color);
+    }
+}

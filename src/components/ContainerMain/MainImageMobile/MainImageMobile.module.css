@@ -1,0 +1,28 @@
+
+.section {
+    grid-area: mainimagemobile;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.section_container {
+    display: grid;
+    justify-self: center;
+}
+
+.section_img2 {
+    padding-top: 60px;
+    width: 90%;
+    justify-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .section {
+        padding-top: 20px;
+    }
+
+    .section_img2 {
+        display: none;
+    }
+}

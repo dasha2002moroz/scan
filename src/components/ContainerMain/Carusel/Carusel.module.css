@@ -1,0 +1,149 @@
+.carusel {
+    grid-area: carusel;
+    align-self: center;
+    justify-self: center; 
+}
+
+.text {
+    font-family: var(--inter-light-Beta);
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.carousel {
+    padding-top: 5px;
+    height: 270px;
+    display: block;
+    position: relative;
+}
+
+.content {
+    height: 270px;
+    left: 22px;
+    right: 10px;
+    display: flex;
+    overflow-x: hidden;
+    position: absolute;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+
+.imgLeft {
+    position: absolute;
+    left: -9px;
+    top: 107px;
+    transform: scale(-100%);
+    width: 39px;
+    height: 39px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.imgRight {
+    position: absolute;
+    right: -18px;
+    top: 107px;
+    width: 39px;
+    height: 39px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.item {
+    min-width: 400px;
+    max-height: 225px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.20);
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex: 0;
+    overflow: hidden;
+}
+
+.item + .item {
+    margin-left: 28px;
+}
+
+.itemImg {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 29px;
+    left: 16px;
+    filter: invert(39%) sepia(43%) saturate(6729%) hue-rotate(159deg) brightness(96%) contrast(98%)
+}
+
+.itemText {
+    color: var(--base-black);
+    font-family: var(--inter-light-Beta);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    padding: 112px 16px 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+        .carusel {
+            grid-area: carusel;
+            padding-top: 2px;
+            height: 600px;
+        }
+
+        .text {
+            width: 574px;
+            font-size: 58px;
+            letter-spacing: 0.28px;
+        }
+
+        .carousel {
+            height: 370px;
+            padding-top: 2px;
+            margin-left: -20px;
+            margin-right: -6px;
+        }
+
+        .content {
+            height: 400px;
+            left: 60px;
+            justify-content: center;
+            right: 16px;        }
+
+        .imgLeft {
+            top: 170px;
+            left: 30;
+            width: 100px;
+
+        }
+
+        .imgRight {
+            top: 170px;
+            right: 30;
+            width: 100px;
+
+        }
+
+        .item {
+            min-width: 780px;
+            max-height: 585px;
+            height: 580;
+        }
+
+        .item + .item {
+            margin-left: 148px;
+        }
+         
+        .itemImg {
+            width: 104px;
+            height: 104px;
+        }
+
+        .itemText {
+            font-size: 48px;
+        }
+}

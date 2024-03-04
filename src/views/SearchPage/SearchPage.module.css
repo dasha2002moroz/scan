@@ -1,0 +1,332 @@
+.serch {
+  grid-area: search;
+}
+
+  
+  
+  .search_container {
+    display: grid;
+    justify-self: center;
+    
+    align-self: center;
+    grid-template-areas: 
+    "search_title ."
+    "search_text ."
+    " search_form search_image ";
+   
+    grid-template-rows:  100px 50px 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .search_title {
+    grid-area: search_title;
+    font-family:'inter-black';
+    margin-left: 20px;
+  }
+  
+  .search_text {
+    grid-area: search_text;
+    font-family: 'inter-regular';
+    margin-left: 20px;
+  }
+
+  .search_form {
+    grid-area: search_form;
+  }
+
+  .form {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px #00000033; 
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    width: 80%; 
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .search_image {
+    grid-area: search_image;
+  }
+
+  .imageContainer {
+    width: 100%; 
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border: 1px; 
+  }
+  
+  .imageContainer img:last-child {
+    margin: 0 auto;
+  }
+  
+  .imageDoc {
+    width: 15%;
+    margin-bottom: 50px;
+  } 
+  
+  .imageFol {
+    width: 20%;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+  .imageGro {
+    width: 80%;
+    margin-left: 10px;
+    align-self: flex-end;
+    margin-bottom: 50px;
+  } 
+
+  .search_form_container {
+    display: grid;
+    justify-self: center; 
+    align-self: center;
+    grid-template-areas: 
+    "search_form_container_element1  search_form_container_element2"
+    "search_form_container_element1  search_form_container_element3";
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .search_form_container_element1 {
+    grid-area: search_form_container_element1;
+    margin-top: 20px ;
+  }
+
+  .search_form_container_element2 {
+    grid-area: search_form_container_element2;
+    margin-top: 30px ;
+  }
+
+  .search_form_container_element3 {
+    grid-area: search_form_container_element3;
+  }
+    
+  .label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form_label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .left_input {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .error {
+    font-size: 14px;
+    color: #ff5959;
+  }
+  
+  .star {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #ff5959;
+  }
+
+  .data {
+   
+    display: flex;
+    column-count: 2;
+    column-rule: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .date_separator {
+    width: 16px;
+  }
+  
+  .input,
+  .select {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .checkbox_container {
+    display: grid;
+    justify-self: center; 
+    align-self: center;
+    grid-template-areas: 
+    "search_checkbox  search_label_checkbox";
+   
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 10fr;
+  }
+  .checkbox {
+    grid-area: search_checkbox;
+    margin-right: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+ 
+  }
+
+  .label_checkbox {
+    grid-area: search_label_checkbox;
+    margin-bottom: 1px;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    width: 320px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blue-bg-color);
+    color: var(--black-bg-color);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  .submitButton:disabled {
+    background-color: var(--gray-bg-color);
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  .errorInput {
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff5959;
+    box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.2);
+  }
+
+   @media (max-width: 1024px) {
+    .search_container {
+      display: grid;
+      justify-self: center;
+      justify-content: center;
+      align-self: center;
+      grid-template-areas: 
+      "search_title"
+      "search_text"
+      "search_form"
+      "search_image";
+
+      grid-template-rows:  200px 150px 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    .search_form_container {
+      display: grid;
+      justify-self: center; 
+      align-self: center;
+      grid-template-areas: 
+      "search_form_container_element1"
+      "search_form_container_element3";
+   
+      grid-template-rows: 3fr 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    .search_form_container_element2 {
+      display: none; 
+    }
+  
+    .left_input {
+      margin-bottom: 150px;
+    }
+    
+    .error {
+      font-size: 44px;
+    }
+    
+    .star {
+      margin-bottom: 40px;
+      font-size: 45px;
+    }
+
+    .date_separator {
+      width: 16px;
+    }
+
+    .label {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      color: var(--black-bg-color);
+      font-size: 46px;
+    }
+
+    .form_label {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      color: var(--black-bg-color);
+      font-size: 36px;
+    }
+
+      .input,
+      .select {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      color: var(--black-bg-color);
+      font-size: 26px;
+    }
+
+    .left_input {
+      margin-bottom: 100px;
+    }
+
+    .left_input {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      color: var(--black-bg-color);
+      font-size: 26px;
+    }
+
+    .submitButton {
+      width: 100%;
+      border-radius: 5px;
+      font-size: 46px;
+      margin-top: 50px;
+    }
+    .search_form {
+      justify-self: center;
+    }
+
+    .form {
+      width: 100%; 
+      margin-left: 0px;
+
+    }
+
+    .imageContainer {
+      justify-self: center;
+      width: 100%; 
+    }
+      .imageDoc {
+        display: none;
+      } 
+      
+      .imageFol {
+        display: none;
+      }
+      .imageGro {
+
+        width: 100%;
+
+      } 
+      
+    
+
+   }

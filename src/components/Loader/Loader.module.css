@@ -1,0 +1,11 @@
+/* Loader */
+.loader {
+    grid-area: info;
+    height: 63px;
+    justify-self: center; 
+    align-self: center;
+    top: 36px;
+    right: 60px;
+    width: 130px;
+    
+}

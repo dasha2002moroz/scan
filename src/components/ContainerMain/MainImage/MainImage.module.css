@@ -1,0 +1,27 @@
+
+.section {
+    grid-area: mainimage1;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.section_container {
+    display: grid;
+    justify-self: center;
+}
+
+.section_img1 {
+    grid-area: img1;
+    width: auto;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .section_img1 {
+        grid-area: img1;
+        display: none;
+    }
+}

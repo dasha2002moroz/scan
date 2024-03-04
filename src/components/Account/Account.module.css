@@ -1,0 +1,61 @@
+.account {
+    grid-area: login;
+    justify-self: center; 
+    align-self: center;
+    /* top: 36px;
+    right: 60px; */
+    align-items: center;
+    /* position: absolute; */
+    top: 28px;
+    right: 60px;
+}
+
+.account_container {
+    display: grid;
+    justify-self: center; 
+    align-self: center;
+    grid-template-areas: 
+    "name  avatar"
+    "logout   avatar";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 1fr;
+
+}
+.left {
+    grid-area: name;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.name {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.exit {
+    grid-area: logout;
+    padding-top: 2px;
+    font-size: 10px;
+}
+
+.logout {    
+    opacity: 0.4;
+    text-decoration: none;
+    color: var(--base-black);
+    font-size: 10px;
+    letter-spacing: 0.1px;
+}
+
+.avatar { 
+    grid-area: avatar;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .account {
+        display: none;
+    }
+}

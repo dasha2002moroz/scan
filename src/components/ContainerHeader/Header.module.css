@@ -1,0 +1,35 @@
+.header {
+    grid-area: header;
+    background-color: var(--main-bg-color);
+}
+
+.header_container {
+    display: grid;
+    align-self: center;
+    justify-self: center; 
+    grid-template-areas: 
+    "imglogo . info . .  menu ";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/* Медиа запрос для настольных компьютеров и планшетов */
+@media (min-width: 1024px) {
+
+.header_container {
+    display: grid;
+    align-self: center;
+    justify-self: center; 
+    grid-template-areas: 
+    "imglogo . .  menu info login";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    }
+    .header_container_logo {
+        padding: 30px;
+        width: 200px;
+  }
+}

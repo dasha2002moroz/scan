@@ -1,0 +1,42 @@
+.info {
+    grid-area: info;
+    align-self: center;
+    top: 36px;
+    right: 60px;
+    width: 130px;
+    background-color: var(--grey-bg-color);
+}
+
+.wait {
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    animation: wait-rotate 2s infinite linear;
+}
+
+@keyframes wait-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.used, .limit {
+    font-size: 10px;
+    opacity: 0.4;
+    text-align: right;
+}
+
+.usedCount {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.limitCount {
+    color: #8AC540;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+

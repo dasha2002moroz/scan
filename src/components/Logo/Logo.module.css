@@ -1,0 +1,28 @@
+ /* Стили по умолчанию для мобильных устройств */
+.logo {
+  grid-area: imglogo;
+}
+
+.logo_container { 
+  margin: 2px 60px;
+}
+
+.logo_container_img {
+  width: 282;
+}
+
+/* Медиа запрос для настольных компьютеров и планшетов */
+@media (min-width: 1024px) {
+  .logo {
+    grid-area: imglogo;
+  }
+  
+  .logo_container { 
+    margin: 2px 160px;
+
+  }
+  
+  .logo_container_img {
+    width: 360;
+  }
+}

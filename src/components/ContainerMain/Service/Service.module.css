@@ -1,0 +1,144 @@
+.service {
+    grid-area: service;
+}
+
+ /* Стили по умолчанию для мобильных устройств */
+
+ .service_container {
+    display: grid;
+    align-self: center;
+    justify-self: center; 
+    grid-template-areas: 
+    "element1"
+    "element2"
+    "element3"
+    "element4";
+
+    grid-template-rows: 1fr 700px 200px 160px;
+    grid-template-columns: 1fr;
+}
+
+.service_container_element1 {
+    grid-area: element1;
+}
+
+.service_container_element1_text {
+    font-family:'inter-black';
+    font-size: 400%;
+    line-height: 140%;
+    text-align: left;
+    padding: 10px; 
+    margin: 20px 0;
+}
+
+.service_container_element2 {
+    grid-area: element2; 
+    align-self: center;
+    justify-self: center; 
+}
+
+.service_container_element2_image {
+
+    width: 110%;
+    height: 110%;
+
+}
+
+.service_container_element3 {
+    grid-area: element3;
+}
+
+.service_container_element3_text {  
+    font-family:'inter-regular';
+    font-size: 160%;
+    line-height: 120%;
+    text-align: left;
+    padding: 10px; 
+    margin: 20px 0;
+}
+
+.service_container_element4 {
+    grid-area: element4;
+    align-self: center;
+    justify-self: center; 
+}
+
+.service_container_element4_button {  
+    font-family: 'inter-regular';
+    color: var(--white-bg-color);
+    padding: 25px 260px;
+    border-radius: 15px;
+    font-size: 90%;
+    border: 5;
+    background-color: var(--blue-bg-color);
+}
+
+/* Медиа запрос для настольных компьютеров и планшетов */
+@media (min-width: 1024px) {
+
+    .service_container {
+        display: grid;
+        align-self: center;
+        justify-self: center; 
+        grid-template-areas: 
+        "element1 element2"
+        "element3 element2"
+        "element4 element2";
+     
+    
+        grid-template-rows: 1fr 100px 180px;
+        grid-template-columns: 1fr 1fr;
+     }
+    .service_container_element1 {
+        grid-area: element1;
+    }
+
+    .service_container_element1_text {  
+        font-family:'inter-black';
+        font-size: 400%;
+        line-height: 130%;
+        text-align: left;
+        padding: 30px; 
+        margin: 20px 0;
+    }
+
+    .service_container_element2 {
+        grid-area: element2; 
+        align-self: center;
+        justify-self: center; 
+    }
+
+    .service_container_element2_image {
+        width: 120%;
+        height: 120%;
+    }
+
+    .service_container_element3 {
+        grid-area: element3;
+    }
+
+    .service_container_element3_text {  
+        font-family:'inter-regular';
+        font-size: 180%;
+        line-height: 120%;
+        text-align: left;
+        padding: 30px; 
+        margin: 20px 0;
+    }
+    .service_container_element4 {
+        grid-area: element4;
+        align-self: center;
+        justify-self: left; 
+        padding: 30px; 
+    }
+    
+    .service_container_element4_button {  
+        font-family: 'inter-regular';
+        color: var(--white-bg-color);
+        padding: 2px 60px;
+        border-radius: 5px;
+        font-size: 60%;
+        border: 5;
+        background-color: var(--blue-bg-color);
+    }
+}

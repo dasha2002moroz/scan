@@ -1,0 +1,47 @@
+.address {
+  grid-area: address;  
+}
+
+ /* Стили по умолчанию для мобильных устройств */
+.address_container {
+  margin: 25px 60px;
+}
+
+.address_container_text  {
+  text-align: right;
+  color: white;
+  font-family:'inter-light';
+  font-style: normal;
+  font-size: 90%;
+}
+
+.address_container_text_copyright {
+  text-align: right;
+  color: white;
+  font-family:'inter-light';
+  font-style: normal;
+  font-size: 80%;
+}
+
+/* Медиа запрос для настольных компьютеров */
+@media (min-width: 768px) {
+  .address_container {
+    margin: 25px 25px;
+  }
+  
+  .address_container_text  {
+    text-align: right;
+    color: white;
+    font-family:'inter-light';
+    font-style: normal;
+    font-size: 90%;
+  }
+  
+  .address_container_text_copyright {
+    text-align: right;
+    color: white;
+    font-family:'inter-light';
+    font-style: normal;
+    font-size: 80%;
+  }
+}
