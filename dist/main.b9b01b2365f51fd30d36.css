@@ -1,0 +1,52 @@
+/*!*********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.css ***!
+  \*********************************************************************************************************************************************************/
+@font-face {
+  font-family: "inter-regular";
+  src: url(0d6f7c99e635f1fec4c9.woff) format("woff");
+}
+@font-face {
+  font-family: "inter-light";
+  src: url(ed9a7ce1dedab5d9333b.woff) format("woff");
+}
+@font-face {
+  font-family: "inter-extralight";
+  src: url(f8fb7b16183c98e54acd.woff) format("woff");
+}
+@font-face {
+  font-family: "inter-thin";
+  src: url(2e9280712a9b6cb10f84.woff) format("woff");
+}
+@font-face {
+  font-family: "inter-bold";
+  src: url(66cf4b9f4914fd7e7e68.woff) format("woff");
+}
+:root {
+  --main-bg-color: #029492;
+}
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/App.css ***!
+  \*******************************************************************************************************************************************************/
+.app {
+  display: grid;
+  grid-template-areas: "header header" "home   home" "footer footer";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 10px; */
+}
+/*!****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/Header.module.css ***!
+  \****************************************************************************************************************************************************************************/
+.Qp5xkmMJGKUSGJdCNCHD {
+  grid-area: header;
+  background-color: var(--main-bg-color);
+}
+/*!***************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/views/HomePage/HomePage.module.css ***!
+  \***************************************************************************************************************************************************************************/
+.AS6cFQHDNKBnmqmWIH6_ {
+  grid-area: header;
+  background-color: rebeccapurple;
+}
+
+/*# sourceMappingURL=main.b9b01b2365f51fd30d36.css.map*/
